@@ -52,7 +52,7 @@ class personaje(object):
         self.posicion.append([self.x, self. y])
         self.n_manzanas = 1
         self.comida = False
-        self.imagen = pygame.image.load('bssets/fantasma rojo.png')
+        self.imagen = pygame.image.load('demas/fantasma rojo.png')
         self.cambio_x = 20
         self.cambio_y = 0
         self.direccion = [1, 0]
@@ -119,7 +119,7 @@ class personaje(object):
 class Laser(pygame.sprite.Sprite):
     def  __init__(self, x, y):
         super().__init__()
-        self.image = pygame.image.load("bssets/puntosadisparar.png")
+        self.image = pygame.image.load("demas/puntosadisparar.png")
         self.image.set_colorkey(gris)
         self.rect = self.image.get_rect()
         self.rect.y = y
@@ -135,7 +135,7 @@ class pacmans(object):
     def __init__(self):
         self.x_food = 200
         self.y_food = 200
-        self.image = pygame.image.load('bssets/pacman.png').convert()
+        self.image = pygame.image.load('demas/pacman.png').convert()
 
     def comida_coor(self, game, player):
         x_rand = np.random.choice(list(range(0, game.ancho_juego, 20)))
