@@ -15,3 +15,18 @@ Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
   <li> Finalización del juego: cuando se finaliza Pygame, es decir, el juego; GameOver.
   </ul>
 
+    Para entender Pygame, hay que tener en cuenta algunos de estos aspectos:
+        El esqueleto de un programa se compone de los siguientes componentes:
+  <li> Función main() o clase Game(): contenedor del videojuego.
+  
+  <li> Control de eventos: pygame.event.get(), es decir, lista de eventos a procesar.
+    
+  <li> Sprites: rectángulos que representan los objetos móviles o fijos del juego. Estos pueden animarse con frames o modificarse gráficamente. También se pueden detectar colisiones entre ellos. 
+      
+  <li> Sonidos: pygame.mixer.Sound() y play.
+      
+  <li> Textos: pygame.font.Font(file_path, size) y render.
+  </ul>
+  
+  # Visual Studio Code
+  
