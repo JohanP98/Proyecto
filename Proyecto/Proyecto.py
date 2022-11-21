@@ -25,10 +25,10 @@ class Game(object):
 
     def display_ui(self, record):
         self.display_juego.fill(blanco)
-        score_txt = self.font.render('Puntos: ', True, (blanco)
-        score_num = self.font.render(str(self.score), True, (blanco)
-        record_txt = self.font.render('Record: ', True, (blanco)
-        record_num = self.font.render(str(record), True, (blanco)
+        score_txt = self.font.render('Puntos: ', True, blanco)
+        score_num = self.font.render(str(self.score), True, blanco)
+        record_txt = self.font.render('Record: ', True, blanco)
+        record_num = self.font.render(str(record), True, blanco)
 
         pygame.draw.rect(self.display_juego, (0, 0, 0), (0, self.alto_juego, self.alto_juego, 100))
 
