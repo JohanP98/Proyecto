@@ -103,3 +103,38 @@ class Game(object):
         arma= arma()
         imagenes.add(arma)
         efectos.add(arma)
+class Laser(pygame.sprite.Sprite):
+    def  _init_(self, x, y):
+        super()._init_()
+        self.image = pygame.image.load("bssets/puntosadisparar.png")
+        self.image.set_colorkey(gris)
+        self.rect = self.image.get_rect()
+        self.rect.y = y
+        self.rect.centerx = x
+        self.speedy = -10
+    def update(self):
+        self.rect.y += self.speedy
+        if self.rect.bottom < 0:
+            self.kill()
+
+class pacmans(object):
+
+    def _init_(self):
+        self.x_food = 200
+        self.y_food = 200
+        self.image = pygame.image.load('bssets/pacman.png').convert()
+
+    def comida_coor(self, game, player):
+        x_rand = np.random.choice(list(range(0, game.ancho_juego, 20)))
+        self.x_food = x_rand
+        y_rand = np.random.choice(list(range(0, game.alto_juego, 20)))
+        self.y_food = y_rand
+
+    def display_comida(self, x, y, game):
+        game.display_juego.blit(self.image, (x, y))
+
+    def comer(self, player, game):
+        if player.x == self.x_food and player.y == self.y_food:
+            self.comida_coor(game, player)
+            player.comida = True
+            game.score += 1
