@@ -3,6 +3,10 @@ import numpy as np
 
 pygame.init()
 
+negro  = (0,0,0)
+blanco = (255,255,255)
+gris   = (127,127,127)
+
 class Game(object):
 
     def __init__(self, ancho_juego, alto_juego):
@@ -16,7 +20,7 @@ class Game(object):
         self.font = pygame.font.SysFont('Arial', 25)
 
     def display_ui(self, record):
-        self.display_juego.fill((127, 127, 127))
+        self.display_juego.fill(blanco)
         score_txt = self.font.render('Puntos: ', True, (255, 255, 255))
         score_num = self.font.render(str(self.score), True, (255, 255, 255))
         record_txt = self.font.render('Record: ', True, (255, 255, 255))
@@ -32,9 +36,12 @@ class Game(object):
     def obtener_record(self, score, record):
         return score if score >= record else record
 
-    class personaje(object):
+imagenes = pygame.sprite.Group()
+efectos  = pygame.sprite.Group()
 
-    def _init_(self):
+class personaje(object):
+
+    def __init__(self):
         self.x = 100
         self.y = 100
         self.posicion = []
@@ -103,9 +110,11 @@ class Game(object):
         arma= arma()
         imagenes.add(arma)
         efectos.add(arma)
+
+
 class Laser(pygame.sprite.Sprite):
-    def  _init_(self, x, y):
-        super()._init_()
+    def  __init__(self, x, y):
+        super().__init__()
         self.image = pygame.image.load("bssets/puntosadisparar.png")
         self.image.set_colorkey(gris)
         self.rect = self.image.get_rect()
@@ -119,7 +128,7 @@ class Laser(pygame.sprite.Sprite):
 
 class pacmans(object):
 
-    def _init_(self):
+    def __init__(self):
         self.x_food = 200
         self.y_food = 200
         self.image = pygame.image.load('bssets/pacman.png').convert()
@@ -137,4 +146,45 @@ class pacmans(object):
         if player.x == self.x_food and player.y == self.y_food:
             self.comida_coor(game, player)
             player.comida = True
-            game.score += 1
+            game.score += 1
+
+
+
+
+running = True
+def run():
+    pygame.init()
+    record = 0
+    clock = pygame.time.Clock()
+    
+    while True:
+        game = Game(420, 420)
+        player = personaje()
+        punto = pacmans()
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    player.disparar()
+
+        imagenes.update()
+
+
+        game.display_ui(record)
+        player.display_jugador(player.x, player.y, game)
+        punto.display_comida(punto.x_food, punto.y_food, game)
+        pygame.display.update()
+
+        while not game.colision:
+            player.hacer_movimiento(player.x, player.y, game, punto)
+            record = game.obtener_record(game.score, record)
+            game.display_ui(record)
+            player.display_jugador(player.x, player.y, game)
+            punto.display_comida(punto.x_food, punto.y_food, game)
+            pygame.display.update()
+            clock.tick(10)
+
+if __name__ == '__main__':
+    run()
