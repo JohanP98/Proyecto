@@ -29,8 +29,11 @@ Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
   </ul>
   
   #Numpy
+  Es una libreria tambien de python, la cual incluye muchas cosas basicas y algunas ya mas complejas, entre las cuales se pueden encontrar operaciones matematicas   avanzadas, tambien sirve para el manejo de matrices, diccionarios y listas.Entre otras cosas tambien ofrece una ayuda para manejar los datos mucho mas rapido. 
+  Para poder usar algun tipo de comando de esta libreria primero hay que poner al principio del codigo el 'import numpy as np'.
+ 
   
-  
+ 
   # Visual Studio Code
   Visual Studio Code (VS Code) es un editor de código fuente desarrollado por Microsoft. Es software libre y multiplataforma, está disponible para Windows, GNU/Linux y macOS. VS Code tiene una buena integración con Git, cuenta con soporte para depuración de código, y dispone de un sinnúmero de extensiones, que básicamente te da la posibilidad de escribir y ejecutar código en cualquier lenguaje de programación.
   
