@@ -51,3 +51,9 @@ Extensiones: Hasta ahora, se ha mencionado varias veces el término extensiones 
 
 # Mas allá del proyecto
 En este trabajo quisimos hacer un juego basico, de lo mas conocidos que es snake pero con cambios como los de la propia serpiente y los puntos que esta tiene que agarrar para crecer. Entre las cosas que utilizamos esta lo aprendido en el curso que seria las lista y funciones. 
+
+Ademas de esto hicimos uso de la implementación de imagenes con ayuda de comandos de pygame. Estas imagenes se encuentran en una carpeta con el nombre 'demas' dentro de la carpeta 'Proyecto'. 
+
+Para realizar este trabajo, tomamos como guia listas de reproducciones de youtube acerca del manejo de pygame y sus elementos.
+
+Intentamos implementar un cambio a la manera clasica de jugar este videojuego el cual trataba de que, la serpiente, en vez de tener que agarrar los puntos para crecer tuviera que dispararle a estos para no morir al tocarlos y a la vez aumentar su tamaño pero no se logró, dentro del codigo principal del juego se encuentra las lineas de codigo para intentar realizar este cambio, estas lineas no afectan en nada al juego principal, entonces estan como evidencia del intento.
