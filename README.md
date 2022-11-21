@@ -30,6 +30,7 @@ Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
   
   # Numpy
   Es una libreria tambien de python, la cual incluye muchas cosas basicas y algunas ya mas complejas, entre las cuales se pueden encontrar operaciones matematicas   avanzadas, tambien sirve para el manejo de matrices, diccionarios y listas.Entre otras cosas tambien ofrece una ayuda para manejar los datos mucho mas rapido. 
+  
   Para poder usar algun tipo de comando de esta libreria primero hay que poner al principio del codigo el 'import numpy as np'.
  
   # Visual Studio Code
