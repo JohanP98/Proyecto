@@ -8,7 +8,7 @@ El SDL son bibliotecas en lenguaje C para gestión de gráficos 2D (manipulació
 
 Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
 
-  <li> Una preparación del entorno: primero, se debe importar Pygame al programa en Python en el entorno virtual, pues es una librería que no forma parte del startup   de Python. Esto lo hacemos con la instrucción: pip install pygame.
+  <li> Una preparación del entorno: primero, se debe importar Pygame al programa en Python en el entorno virtual, pues es una librería que no forma parte del startup de Python. Esto lo hacemos con la instrucción: pip install pygame.
   
   <li> Bucle principal de evento-actualización-repintado: nace del contenedor de nuestro videojuego. Allí encontramos el constructor y la función del lanzamiento del videojuego. Este último creará el bucle con funciones como start, mainloop y handleEvent.
     
@@ -29,7 +29,7 @@ Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
   </ul>
   
   # Numpy
-  Es una libreria tambien de python, la cual incluye muchas cosas basicas y algunas ya mas complejas, entre las cuales se pueden encontrar operaciones matematicas   avanzadas, tambien sirve para el manejo de matrices, diccionarios y listas.Entre otras cosas tambien ofrece una ayuda para manejar los datos mucho mas rapido. 
+  Es una biblioteca para el lenguaje de programación Python que da soporte para crear vectores y matrices grandes multidimensionales, junto con una gran colección de funciones matemáticas de alto nivel para operar con ellas, diccionarios y listas. Entre otras cosas tambien ofrece una ayuda para manejar los datos mucho mas rapido. 
   
   Para poder usar algun tipo de comando de esta libreria primero hay que poner al principio del codigo el 'import numpy as np'.
  
@@ -39,16 +39,15 @@ Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
   Según una encuesta realizada por Stack Overflow a más de 80,000 desarrolladores en mayo del 2021, Visual Studio Code es el entorno de desarrollo más usado y con mucha diferencia, un 71.06%. 
   
   Algunas de sus caracteristicas son:
-  Como se menciona anteriormente, es multiplataforma, lo que en pocas palabras significa que esta disponible para Windows, Linux y MacOS.
+  <li> Como se menciona anteriormente, es multiplataforma, lo que en pocas palabras significa que esta disponible para Windows, Linux y MacOS.
   
-  Otra característica es que es IntelliSense, esta característica está relacionada con la edición de código, autocompletado y resaltado de sintaxis, lo que permite ser más ágil a la hora de escribir código. Como su nombre lo indica, proporciona sugerencias de código y terminaciones inteligentes en base a los tipos de variables, funciones, etc. Con la ayuda de extensiones se puede personalizar y conseguir un IntelliSense más completo para cualquier lenguaje.
-  
-  Depuración: Visual Studio Code incluye la función de depuración que ayuda a detectar errores en el código. De esta manera, nos evitamos tener que revisar línea por línea a puro ojo humano para encontrar errores. VS Code también es capaz de detectar pequeños errores de forma automática antes de ejecutar el código o la depuración como tal.
-
-Uso del control de versiones: Visual Studio Code tiene compatibilidad con Git, por lo que puedes revisar diferencias o lo que conocemos con git diff, organizar archivos, realizar commits desde el editor, y hacer push y pull desde cualquier servicio de gestión de código fuente (SMC). Los demás SMC están disponible por medio de extensiones.
-
-Extensiones: Hasta ahora, se ha mencionado varias veces el término extensiones porque es uno de los puntos fuertes. Visual Studio Code es un editor potente y en gran parte por las extensiones. Las extensiones nos permiten personalizar y agregar funcionalidad adicional de forma modular y aislada. Realmente las extensiones permiten tener una mejor experiencia, y lo más importante, no afectan en el rendimiento del editor, ya que se ejecutan en procesos independientes.
-
+  <li>  Otra característica es que es IntelliSense, esta característica está relacionada con la edición de código, autocompletado y resaltado de sintaxis, lo que permite ser más ágil a la hora de escribir código. Como su nombre lo indica, proporciona sugerencias de código y terminaciones inteligentes en base a los tipos de variables, funciones, etc. Con la ayuda de extensiones se puede personalizar y conseguir un IntelliSense más completo para cualquier lenguaje.
+    
+  <li> Depuración: Visual Studio Code incluye la función de depuración que ayuda a detectar errores en el código. De esta manera, nos evitamos tener que revisar línea por línea a puro ojo humano para encontrar errores. VS Code también es capaz de detectar pequeños errores de forma automática antes de ejecutar el código o la depuración como tal.
+    
+  <li> Uso del control de versiones: Visual Studio Code tiene compatibilidad con Git, por lo que puedes revisar diferencias o lo que conocemos con git diff, organizar archivos, realizar commits desde el editor, y hacer push y pull desde cualquier servicio de gestión de código fuente (SMC). Los demás SMC están disponible por medio de extensiones.
+  <li> Extensiones: Hasta ahora, se ha mencionado varias veces el término extensiones porque es uno de los puntos fuertes. Visual Studio Code es un editor potente y en gran parte por las extensiones. Las extensiones nos permiten personalizar y agregar funcionalidad adicional de forma modular y aislada. Realmente las extensiones permiten tener una mejor experiencia, y lo más importante, no afectan en el rendimiento del editor, ya que se ejecutan en procesos independientes.
+  </ul> 
 # Mas allá del proyecto
 En este trabajo quisimos hacer un juego basico, de lo mas conocidos que es snake pero con cambios como los de la propia serpiente y los puntos que esta tiene que agarrar para crecer. Entre las cosas que utilizamos esta lo aprendido en el curso que seria las lista y funciones. 
 
