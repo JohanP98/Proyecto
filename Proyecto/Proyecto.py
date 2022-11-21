@@ -31,3 +31,75 @@ class Game(object):
 
     def obtener_record(self, score, record):
         return score if score >= record else record
+
+    class personaje(object):
+
+    def _init_(self):
+        self.x = 100
+        self.y = 100
+        self.posicion = []
+        self.posicion.append([self.x, self. y])
+        self.n_manzanas = 1
+        self.comida = False
+        self.imagen = pygame.image.load('bssets/fantasma rojo.png')
+        self.cambio_x = 20
+        self.cambio_y = 0
+        self.direccion = [1, 0]
+
+    def refrescar_posicion(self, x, y):
+        if self.posicion[-1][0] != x or self.posicion[-1][0] != y:
+            if self.n_manzanas > 1:
+                for i in range(self.n_manzanas - 1):
+                    self.posicion[i][0], self.posicion[i][1] = self.posicion[i + 1]
+
+            self.posicion[-1][0] = x
+            self.posicion[-1][1] = y
+
+    def hacer_movimiento(self, x, y, game, food):
+        array_m = [self.cambio_x, self.cambio_y]
+
+        if self.comida:
+            self.posicion.append([self.x, self.y])
+            self.comida = False
+            self.n_manzanas += 1
+
+        for e in pygame.event.get():
+            if e.type == pygame.KEYDOWN:
+                if e.key == pygame.K_LEFT and self.direccion != [1, 0]:
+                    array_m = [-20, 0]
+                    self.direccion = [-1, 0]
+                elif e.key == pygame.K_RIGHT and self.direccion != [-1, 0]:
+                    array_m = [20, 0]
+                    self.direccion = [1, 0]
+                elif e.key == pygame.K_UP and self.direccion != [0, -1]:
+                    array_m = [0, -20]
+                    self.direccion = [0, 1]
+                elif e.key == pygame.K_DOWN and self.direccion != [0, 1]:
+                    array_m = [0, 20]
+                    self.direccion = [0, -1]
+
+        self.cambio_x, self.cambio_y = array_m
+        self.x = x + self.cambio_x
+        self.y = y + self.cambio_y
+
+        if self.x < 0 or self.x > game.ancho_juego-20 \
+                or self.y < 0 or self.y > game.alto_juego-20 \
+                or [self.x, self.y] in self.posicion:
+            game.colision = True
+
+        food.comer(self, game)
+        self.refrescar_posicion(self.x, self.y)
+
+    def display_jugador(self, x, y, game):
+        self.posicion[-1][0] = x
+        self.posicion[-1][1] = y
+
+        if game.colision == False:
+            for i in range(self.n_manzanas):
+                x_temp, y_temp = self.posicion[len(self.posicion) -1 -i]
+                game.display_juego.blit(self.imagen, (x_temp, y_temp))
+
+    def disparar(Self):
+        arma= arma()
+        imagenes.add(arma)
+        efectos.add(arma)
