@@ -6,6 +6,10 @@ pygame.init()
 negro  = (0,0,0)
 blanco = (255,255,255)
 gris   = (127,127,127)
+rojo   = (255,0,0)
+verde  = (0,255,0)
+azul   = (0,0,255)
+amarillo = (255,255,0)
 
 class Game(object):
 
@@ -21,10 +25,10 @@ class Game(object):
 
     def display_ui(self, record):
         self.display_juego.fill(blanco)
-        score_txt = self.font.render('Puntos: ', True, (255, 255, 255))
-        score_num = self.font.render(str(self.score), True, (255, 255, 255))
-        record_txt = self.font.render('Record: ', True, (255, 255, 255))
-        record_num = self.font.render(str(record), True, (255, 255, 255))
+        score_txt = self.font.render('Puntos: ', True, (blanco)
+        score_num = self.font.render(str(self.score), True, (blanco)
+        record_txt = self.font.render('Record: ', True, (blanco)
+        record_num = self.font.render(str(record), True, (blanco)
 
         pygame.draw.rect(self.display_juego, (0, 0, 0), (0, self.alto_juego, self.alto_juego, 100))
 
