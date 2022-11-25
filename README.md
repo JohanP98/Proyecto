@@ -48,7 +48,9 @@ Para poder realizar un juego en Pygame se deben realizar 3 pasos iniciales:
   <li> Uso del control de versiones: Visual Studio Code tiene compatibilidad con Git, por lo que puedes revisar diferencias o lo que conocemos con git diff, organizar archivos, realizar commits desde el editor, y hacer push y pull desde cualquier servicio de gestión de código fuente (SMC). Los demás SMC están disponible por medio de extensiones.
   <li> Extensiones: Hasta ahora, se ha mencionado varias veces el término extensiones porque es uno de los puntos fuertes. Visual Studio Code es un editor potente y en gran parte por las extensiones. Las extensiones nos permiten personalizar y agregar funcionalidad adicional de forma modular y aislada. Realmente las extensiones permiten tener una mejor experiencia, y lo más importante, no afectan en el rendimiento del editor, ya que se ejecutan en procesos independientes.
   </ul> 
+  
   # Mas allá del proyecto
+  
 En este trabajo quisimos hacer un juego basico, de lo mas conocidos que es snake pero con cambios como los de la propia serpiente y los puntos que esta tiene que agarrar para crecer. Entre las cosas que utilizamos esta lo aprendido en el curso que seria las lista y funciones. 
 
 Ademas de esto hicimos uso de la implementación de imagenes con ayuda de comandos de pygame. Estas imagenes se encuentran en una carpeta con el nombre 'demas' dentro de la carpeta 'Proyecto'. 
