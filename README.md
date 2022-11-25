@@ -9,7 +9,7 @@ Este proyecto fue mayormente trabajado con Pygame y con Visual Studio Code.
    <li> Johan Estever Pinzón Lopez
 
    # Pygame
-Es una libreria usada para el desarrollo de juegos en segunda dimension 2D con el lenguaje de Python. Pygame se masa en SDL, que es una librería que provee acceso de bajo nivel al audio, teclado, mouse y al hardware gráfico del PC. Es un programa que funciona tanto en MacOS, Windows y Linux. 
+Es una libreria usada para el desarrollo de juegos en segunda dimension 2D con el lenguaje de Python. Pygame se basa en SDL, que es una librería que provee acceso de bajo nivel al audio, teclado, mouse y al hardware gráfico del PC. Es un programa que funciona tanto en MacOS, Windows y Linux. 
 
 El SDL son bibliotecas en lenguaje C para gestión de gráficos 2D (manipulación de las imágenes como objetos de 2D en la ventana), imágenes (ficheros de tipo jpg o png o tif), audio y periféricos a bajo nivel (teclado, ratón).
 
