@@ -1,5 +1,6 @@
 # Proyecto
 Aqui se encuentra el proyecto final de la materia Algoritmo y Programación, este proyecto fue mayormente trabajado con Pygame y con Visual Studio Code.
+El juego realizado es el de "Snake"
 
 # Pygame
 Es una libreria usada para el desarrollo de juegos en segunda dimension 2D con el lenguaje de Python. Pygame se masa en SDL, que es una librería que provee acceso de bajo nivel al audio, teclado, mouse y al hardware gráfico del PC. Es un programa que funciona tanto en MacOS, Windows y Linux. 
