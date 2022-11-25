@@ -4,7 +4,9 @@ El proyecto realizado fue un videojuego conocido llamado "Snake".
 Este proyecto fue mayormente trabajado con Pygame y con Visual Studio Code.
 
    # Participantes
-   
+   <li> Miguel Angel Santos Gutierrez
+   <li> Tomás Mazabel Fonseca
+   <li> Johan Estever Pinzón Lopez
 
    # Pygame
 Es una libreria usada para el desarrollo de juegos en segunda dimension 2D con el lenguaje de Python. Pygame se masa en SDL, que es una librería que provee acceso de bajo nivel al audio, teclado, mouse y al hardware gráfico del PC. Es un programa que funciona tanto en MacOS, Windows y Linux. 
